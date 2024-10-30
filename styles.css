@@ -3,6 +3,12 @@
     height: auto;
 }
 
+@media only screen {
+    div#wrapper {
+        width: 400px;
+    }
+}
+
 .background-container {
     width: 100vw;
     height: 120vh;
