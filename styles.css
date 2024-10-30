@@ -4,8 +4,8 @@
 }
 
 @media only screen {
-    div#wrapper {
-        width: 400px;
+    body {
+        width: 100%;
     }
 }
 
