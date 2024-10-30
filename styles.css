@@ -10,8 +10,7 @@
 }
 
 .background-container {
- 
-    height: 100%;
+    height: auto;
     background-image: url('images/background.jpg');
     background-repeat: no-repeat;
     background-size: auto 2000px;
