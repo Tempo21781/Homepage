@@ -14,7 +14,7 @@
     height: 100%;
     background-image: url('images/background.jpg');
     background-repeat: no-repeat;
-    background-size: 2400px 1854px;
+    background-size: auto 2000px;
     background-position: center center;
     background-attachment: fixed;
     transition: background-position 0.3s;
