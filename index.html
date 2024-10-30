@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <script src="index_script.js"></script>
+        <title>My Homepage</title>
+    </head>
+    <body class="background-container sticky-top" id="backgroundContainer">
+      <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+        <a class="navbar-brand">
+            <img id="logo" alt="Image Credit: logo made using Chat-GPT" src="images/Logo.png">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+          aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+          <ul class="navbar-nav">
+            <li class="nav-item h4 active">
+              <a class="nav-link" href="index.html" color="white">Home</a>
+            </li>
+            <li class="nav-item h4">
+              <a class="nav-link" href="slideShow.html" color="white">Slide Show</a>
+            </li>
+            <li class="nav-item h4">
+              <a class="nav-link" href="javaScript.html">Java Script</a>
+            </li>
+            <li class="nav-item h4">
+              <a class="nav-link" href="Navigation.html">The Navigation Panel</a>
+            </li>
+            <li class="nav-item h4">
+              <a class="nav-link" href="blogs.html">Blogs and Articles</a>
+            </li>
+            <li class="nav-item h4">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" 
+                aria-haspopup="true" aria-expanded="false"></a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="blog1.html">Why we must (still) teach our children to code</a>
+                <a class="dropdown-item" href="blog2.html">I Fight For The Users</a>
+                <a class="dropdown-item" href="article.html">I learned the language of computer programming in my 50s – here’s what I discovered</a>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+        </nav>
+
+        <div id="jumbotronContainer">
+          <div class="jumbotron">
+            <h1 class="display-4">Hello, world!</h1>
+            <p class="lead">This is a website documententing my journey through learning and applying bootstrap. 
+              I started Problem Set 8 with zero experience in web programming, so it's been a bit of an uphill struggle! 
+              On the homepage, I've included a Jumbotron and some cards with an intro to the rest of the site pages. </p>
+            <hr class="my-4">
+            <p>I began the site by finding a background image, and spent a good bit of time working out how to resize
+              it depending on the size of the browser window. I went through img-fluid and tested a couple of java scripts
+              before concluding it was easier to do it in css directly.</p>
+            <p>It's been a fun project, although what I’ve learned along the way suggests some of the way’s I’ve done things 
+              has been a bit amateur. If I were to restart, I would build a grid for everything to fit on to start with. 
+              I’ve been adding padding to individual elements to make them look “right”, whereas implementing a simple grid 
+              in the beginning would solve a lot of formatting issues. Also getting to grips with bootstrap v5 instead of v4 
+              is another project I’ll have to teach myself if/when I continue using these skills.</p>
+            <p>The button below toggles a scrolling text modal that goes into more detail about the code I used for these
+              elements.</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#moreInfo">
+              Learn More
+            </button>
+            </div>
+        </div>
+          
+
+        <div class="modal fade" id="moreInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">More information</h5>
+              </div>
+              <div class="modal-body">
+                <h2>Initial Images and Sizing</h2>
+                  <p>I started without any real idea of what I was doing, so I thought I’d get the 
+                    template for the site done. Finding a background image through a free wallpaper 
+                    (credited in the alternative text of the image) and throwing a quick logo together
+                    were my first stops. </p>
+                  <p>With the images in hand, I wanted to dynamically size it depending on the size of 
+                    the browser. I started playing around with img-fluid, but it didn’t really achieve 
+                    what I wanted – the vision was to have an image centralised and it zoom in depending 
+                    on the size of the device. I played around with some java script (using 
+                    window.addEventListener and window.innerWidth) but I couldn’t get them to work. </p>
+                  <p>I finally investigated CSS, which is what is in the current code. I set a container
+                    who’s aim is to have everything in it (background-container, set it’s background to 
+                    the image (with a specific size) then set the background position to top center. </p>
+                  <p>Before getting stuck into the meat of my web programming, I had a read through the 
+                    bootstrap documentation, to understand the functionality I could access with it. </p>
+                <h2>The Jumbotron</h2>
+                  <p>From bootstrap’s documentation, the jumbotron is a “Lightweight, flexible component 
+                    for showcasing hero unit style content.” I take it as giving the user a container and 
+                    some additional styling elements. I had to tweak it a bit, because I wanted it to 
+                    show on top of my background image, so I changed the colour to a transparent grey. I 
+                    also wanted the appearance of a centralised block, so I added a line in my css styles 
+                    for it. My first test was to set the max-width to a specific figure, bit I found that 
+                    aligned the container to the left, which I didn’t want. Doing a bit of searching 
+                    landed me with margin: auto which centralised the container. Adding a bit of padding 
+                    for aesthetics and it looked OK!</p>
+                <h2>The Cards</h2>
+                  <p>Adding cards looked like a neat trick which would work well on a homepage, so I dived 
+                    in. Bootstap’s documentation is pretty self-explanatory, but I had to play around with 
+                    the class of grid I wanted to lay the cards on. </p>
+                  <p>The default class (col-sm-6) seemed to do weird things when I scaled the size of my 
+                    browser, so I looked into the grid formatting options. Reading the grid documentation, 
+                    the number after the col-sm indicates the number of cards you want per row, but there 
+                    is a default you can use which is removing that specification.</p>
+                  <p>Adding css lines (as I did for jumbotron) gave me the styling I wanted, so it was a 
+                    success!</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row container-fluid" id="cardsRow">
+          <div class="col-sm" style="min-width: 300px;" id="cards">
+            <div class="card">
+              <img class="card-img-top" src="images/Card 1.png" alt="Images borrowed from © 2021 edX. All rights reserved.">
+              <div class="card-body">
+                <h5 class="card-title">Slide Show</h5>
+                <p class="card-text">A page investigating the bootstrap carousel feature.</p>
+                <a href="slideShow.html" class="btn btn-primary">Go to page</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm" style="min-width: 300px;" id="cards">
+            <div class="card">
+              <img class="card-img-top" src="images/javascript.jpeg" alt="Images borrowed from © 2021 edX. All rights reserved.">
+              <div class="card-body">
+                <h5 class="card-title">Java Script</h5>
+                <p class="card-text">A page looking at the javascript elements I added to the site.</p>
+                <a href="javaScript.html" class="btn btn-primary">Go to page</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm" style="min-width: 300px;" id="cards">
+            <div class="card">
+              <img class="card-img-top" src="images/browser-programming.jpeg" alt="Images borrowed from © 2021 edX. All rights reserved.">
+              <div class="card-body">
+                <h5 class="card-title">Navigation</h5>
+                <p class="card-text">A page going into the navigation properties of bootstrap.</p>
+                <a href="Navigation.html" class="btn btn-primary">Go to page</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm" style="min-width: 300px;" id="cards">
+            <div class="card">
+              <img class="card-img-top" src="images/Blog.png" alt="Image credit: https://blog.acceleratelearning.com/what-is-coding-for-kids">
+              <div class="card-body">
+                <h5 class="card-title">Blog and Articles</h5>
+                <p class="card-text">A page showcasing blogs and articles - how bootstrap manages text.</p>
+                <a href="blogs.html" class="btn btn-primary">Go to page</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="navbar fixed bottom navbar-dark" style="background-color: #1701014b;" id="footer">
+          <a class="navbar-brand">Tempo's Great Website</a>
+          <p id="copyright">Images used on this page are from EDX's website © 2021 and a wallpaper download site - Michael D, https://unsplash.com/@alienaperture. </p>
+          <ul class="navbar-nav">
+            <li class="nav-item active h4">
+              <a class="navbar-brand" href="https://discordapp.com/users/tempo21781">Follow me <img src="images/pngegg.png" width="30" height="30"></a>
+            </li>
+          </ul>
+        </nav>
+    </body>
+</html>

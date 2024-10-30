@@ -1,0 +1,41 @@
+The HTML tags used in this (probably a few more, but more than 10 listed below)
+<html>
+<head>
+<link>
+<script>
+<title>
+<body>
+<nav>
+<a>
+<img>
+<div>
+<i>
+<b>
+<figure>
+<code>
+<pre>
+
+I've used masses of CSS properties - seen in my css file. 5 of them are:
+.background-container {
+    width: 100vw;
+    height: 120vh;
+    background-image: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 2400px 1854px;
+    background-position: center center;
+    background-attachment: fixed;
+    transition: background-position 0.3s;
+}
+
+a {
+    color: rgba(255, 255, 255, 0.596);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underLine;
+    color: rgba(255, 255, 255, 0.596);
+}
+
+I used JavaScript to automate the bootstrap carousel.
+I used tons of bootstrap components, my goal was to add as many of them as I could before I ran out of steam, but the site itself documents my journey through that!

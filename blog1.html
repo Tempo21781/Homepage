@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <script src="index_script.js"></script>
+        <title alt="Blog linked from: https://www.computingatschool.org.uk/news-and-blogs/2023/november/why-we-must-still-teach-our-children-to-code">Why we must (still) teach our children to code</title>
+    </head>
+    <body class="background-container sticky-top" id="backgroundContainer">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+            <a class="navbar-brand">
+                <img id="logo" alt="Image Credit: logo made using Chat-GPT" src="images/Logo.png">
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+    
+              <ul class="navbar-nav">
+                <li class="nav-item h4">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item h4">
+                  <a class="nav-link" href="slideShow.html" color="white">Slide Show</a>
+                </li>
+                <li class="nav-item h4">
+                  <a class="nav-link" href="javaScript.html">Java Script</a>
+                </li>
+                <li class="nav-item h4">
+                  <a class="nav-link" href="Navigation.html">The Navigation Panel</a>
+                </li>
+                <li class="nav-item h4 active">
+                  <a class="nav-link" href="blogs.html">Blogs and Articles</a>
+                </li>
+                <li class="nav-item h4">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" 
+                    aria-haspopup="true" aria-expanded="false"></a>
+                  <div class="dropdown-menu dropdown-menu-right dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="blog1.html">Why we must (still) teach our children to code</a>
+                    <a class="dropdown-item" href="blog2.html">I Fight For The Users</a>
+                    <a class="dropdown-item" href="article.html">I learned the language of computer programming in my 50s – here’s what I discovered</a>
+                  </div>
+                </li>
+              </ul>
+    
+            </div>
+            </nav>
+
+      <div id="jumbotronContainer">
+        <div class="jumbotron">
+            <h1 class="display-4">Why we must (still) teach our children to code</h1>
+            <div class="row">
+                <div class="col-sm">
+                    <p class="ml-3"><img src="images/spj-snow.webp" class="rounded-circle ml-3" 
+                        alt="Image from: https://www.computingatschool.org.uk/news-and-blogs/2023/november/why-we-must-still-teach-our-children-to-code" 
+                        width="50">&nbsp;&nbsp;&nbsp;<b>Written by</b> Simon Peyton Jones</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <p>Original blog written by Computing at School. Link <a href="https://www.computingatschool.org.uk/news-and-blogs/2023/november/why-we-must-still-teach-our-children-to-code">here</a>.</p>
+            <div>
+                <p>The advent of ChatGPT and GitHub Copilot, based on Large Language Models (LLMs), has led many people to suggest that, since AI can apparently write code, perhaps programmers will soon be out of work; and, in the education arena, perhaps we no longer need to teach our young people to code.&nbsp; For example in his speech on 6 July 2023, Sir Keir Starmer said "<em>The old way – learning out of date IT, on 20 year old computers – doesn’t work.&nbsp; But neither does the new fashion, that every kid should be a coder, when artificial intelligence will blow that future away."</em></p>
+                <p>I don't think that particular soundbite is right at all.&nbsp; Learning programming is not a "new fashion"; it is part of the very fabric of learning computer science as a foundational subject. Not every child will grow up to be a coder, but that is a poor goal: it suggests a narrow, instrumental, purely-vocational view of education.&nbsp; Not every child grows up to be a biologist or an artist, yet we think it is important that every young person has some elementary understanding of biology and of art.</p>
+                <p>There are two main reasons why I think that programming should remain a fundamental part of what our children learn about computing:</p>
+                <ul>
+                <li><strong>Powerful knowledge and foundational understanding</strong>.&nbsp; Even if AI could write perfect programs (which it can't), there are strong educational reasons for learning to do things that computers do well (Section 1), and programming most of all.</li>
+                <li><strong>Human programmers are more important than ever. </strong>&nbsp;AI will make programmers more <em>productive</em>, but it will not make them <em>redundant </em>any time soon (Section 2).&nbsp; Software development as a professional discipline is far from being blown away.</li>
+                </ul>
+                <p>This article is tightly focused on the question of whether or not we should teach programming at school. An <a rel="noopener" href="/news-and-blogs/2023/june/ai-in-education" target="_blank">earlier article</a> takes a broader look at the impact of AI in education.</p>
+                <h1 style="text-align: left;"><strong>1. Powerful knowledge and foundational understanding</strong></h1>
+                <p>It is tempting to think that if a computer can do X, then there is no point in teaching X to our young people.&nbsp; But actually much of what children learn at school, especially in mathematics,&nbsp; can be done rather well by computers.&nbsp; That is not just oversight: there are strong educational reasons for doing so (Section 1.1).</p>
+                <p>So far as coding is concerned, I argue in Section 3 that AI does not make programming redundant (not yet, and not for the foreseeable future).&nbsp; But even if it did, there are particularly strong educational reasons to believe that learning to understand software (including the ability to write it) is fundamental (Section 1.2).</p>
+                <p>The good news is that ultimately LLMs should open the way to a richer, more exciting pedagogy for computer science (Section 1.3).</p>
+                <h2><strong>1.1 Foundations matter</strong></h2>
+                <p>A humble calculator can multiply and divide multi-digit numbers in a flash, using virtually no energy.&nbsp; And yet our primary schools take every child through hundreds of hours of learning ...arithmetic.&nbsp; It's called "numeracy", and if anything the emphasis on numeracy has <em>increased </em>over the last decade or two.</p>
+                <p>If a dirt-cheap machine can do the job, why do we do that?&nbsp; Because we have learned, through bitter experience, that calculators are not enough; that people who are innumerate have worse life outcomes, lower salaries, and poorer health (<a rel="noopener" href="https://www.nationalnumeracy.org.uk/what-numeracy/why-numeracy-important" target="_blank">National Numeracy makes the case here</a>). Numeracy underpins both deeper learning, and is a foundational life skill.</p>
+                <h2><strong>1.2 Programming matters especially</strong></h2>
+                <p>The National Curriculum Programme of Study for computing says this (my bold):</p>
+                <p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The national curriculum for computing aims to ensure that <strong>all pupils</strong>:</em></p>
+                <ol>
+                <li><em>can understand and apply the fundamental principles and concepts of computer science, including abstraction, logic, algorithms and data representation</em></li>
+                <li><strong><em>can analyse problems in computational terms, and have repeated practical experience of writing computer programs in order to solve such problems</em></strong></li>
+                <li><em>can evaluate and apply information technology, including new or unfamiliar technologies, analytically to solve problems</em></li>
+                <li><em>are responsible, competent, confident and creative users of information and communication technology</em></li>
+                </ol>
+                <p>Note that our focus here is on what <strong><em>all </em></strong>children should learn, not just a geeky elite. That raises the bar considerably. &nbsp; We think that all children should learn elementary maths and science, but we do not insist that they all learn Japanese.</p>
+                <p>Why does the national curriculum make such a big deal about programming?&nbsp; Is coding like elementary maths or like Japanese?&nbsp; Here are two articles that explain why:</p>
+                <ul>
+                <li><a rel="noopener" href="https://helloworld.raspberrypi.org/issues/10" target="_blank">Why we should teach our children to code</a> (Hello World 10, Oct 2019, page 62)</li>
+                <li><a rel="noopener" href="https://static.teachcomputing.org/Practical+Work+in+Computing+Apr+22.pdf?_ga=2.92820315.735608296.1689975530-1618548091.1689975530" target="_blank" data-anchor="?_ga=2.92820315.735608296.1689975530-1618548091.1689975530">Practical programming in computing education</a> (NCCE Academic Board, Feb 2022)</li>
+                </ul>
+                <p>Programming is a classic example of what educationalists call <strong>powerful knowledge</strong>, knowledge that is systematic, subject-specific, and distinct from common sense.&nbsp; The term was introduced by Michael Young in the context of geography; here's a <a rel="noopener" href="https://files.eric.ed.gov/fulltext/EJ1085994.pdf" target="_blank">good summary</a>, and a <a rel="noopener" href="https://www.cambridgeassessment.org.uk/Images/166279-the-curriculum-and-the-entitlement-to-knowledge-prof-michael-young.pdf" target="_blank">talk by Michael Young himself</a>.&nbsp; He says <em>"Powerful knowledge refers to what the knowledge can do or what intellectual power it gives to those who have access to it. Powerful knowledge provides more reliable explanations and new ways of thinking about the world and …can provide learners with a language for engaging in political, moral, and other kinds of debates."</em> (Young, 2008).&nbsp;</p>
+                <p>Here are some more specific reasons that programming is fundamental to learning computer science:</p>
+                <ul>
+                <li><strong>It blows away the magic</strong>.&nbsp; If computers are simply magical black boxes that do wonderful things when you utter the appropriate incantations (mouse-clicks or, these days, prompts to ChatGPT), we are fundamentally dis-empowered.&nbsp; Someone else makes the machine; we simply use it.&nbsp; If it does not work, we are stuck.&nbsp; If it gives misleading or wrong answers we risk following its bad advice.&nbsp; In short, we lose our agency: instead of us controlling technology, it controls us.&nbsp;<br><br>Even an elementary understanding of computer science dispels the magic.&nbsp; All my phone is doing is relentlessly and mindlessly executing instructions, one after another. &nbsp; This can be a revelation: "you mean, that's <em>all </em>it does?"<br><br></li>
+                <li><strong>It brings computer science to life</strong>, making it concrete, interactive, creative, and playful.&nbsp; Saying "computer science is the study of information, computation, and communication" is true but abstract; writing programs that compute over live data brings it to life.&nbsp; Studying computer science in the abstract would be a dry, eviscerated husk.<br><br>There is a false dichotomy between "knowing" and "doing", between "knowledge/understanding" and "skills".&nbsp; In fact, of course, the two are complementary.&nbsp; You can't do much if you don't have the powerful knowledge to direct your actions.&nbsp; But it is virtually impossible to truly internalise deep understanding without a lot of doing to illustrate concepts, exemplify them and put them to work, and move knowledge from memorised "facts" into visceral understanding. &nbsp; In computer science, programming plays a deep role in building understanding.</li>
+                </ul>
+                <ul>
+                <li><strong>It teaches logical thinking and precision</strong>. The computer pitilessly (but non-judgmentally) exposes sloppy thinking -- the program simply doesn't work.&nbsp; Whether we articulate it or not, in writing programs we exercise the classic scientific method: we form a hypothesis about what is wrong; we devise experiments that will validate or disprove the hypothesis; we update our mental model about how the program works; we modify the program, and iterate the entire process.&nbsp; (Side note: we need a proper caution about the extent to which logical thinking about programming "transfers" to logical thinking more generally; see for example <a rel="noopener" href="https://computinged.wordpress.com/2021/07/05/there-is-transfer-between-programming-and-other-subjects-because-of-skills-overlap-and-its-not-causal/" target="_blank">Mark Guzdial's blog post on the subject</a>.)<br><br></li>
+                <li><strong>It gives an informed basis for discussing the social and ethical dimensions of technology. &nbsp; </strong>Computer systems open up huge new opportunities for making the world better; but they also open up huge new ways for making it worse. &nbsp; Basing our ethical and societal judgements on actual knowledge, rather than myths and guesswork, will help us all, individually and collectively, to make better decisions. <br><br><strong>In particular, it puts AI in perspective</strong>.&nbsp; A neural network is just a program that executes, like any other program, doing linear algebra operations over the inputs and a large number of "weights".&nbsp; ChatGPT is no more than 200,000,000,000 floating point numbers and a raft of linear algebra.&nbsp; Of <em>course </em>it doesn't have feelings!&nbsp; And there is <a rel="noopener" href="https://www.raspberrypi.org/blog/ai-education-anthropomorphism/" target="_blank">real danger in sliding into anthropomorphising AI</a>. &nbsp; (Side note: there is considerable philosophical debate about whether there is <em>any </em>level of complexity at which a computer could be said to possess "feelings" or "consciousness".&nbsp; You might enjoy <a rel="noopener" href="https://en.wikipedia.org/wiki/The_Moon_Is_a_Harsh_Mistress" target="_blank">Heinlein's "The Moon is a Harsh Mistress"</a> (1966) for example.&nbsp; But knowing how AI works is crucial for engaging with this debate in a meaningful way; and I think it's pretty clear that today's LLMs are nowhere near "consciousness".)</li>
+                </ul>
+                <ul>
+                <li><strong>Programming is a unique and rich form of expression.&nbsp; </strong>Sometimes programming is a means to an end: "write an app to show weather forecasts on my phone".&nbsp; But quite often it is <em>a medium in which the author directly explores a design space that is not well understood in advance</em>.&nbsp; For example, for a scientist building a model of the spread of Covid in a population, the code is the model; and the scientist may repeatedly modify it to explore different designs and their consequences.&nbsp; Similarly for an artist, the code that generates a picture or a piece of music is the medium of creativity.&nbsp; Coding underpins computational thinking.</li>
+                </ul>
+                <p>In short, even for sorting algorithms,<em> it is simply irrelevant that ChatGPT can write them easily.</em>&nbsp; What matters for pedagogy is the foundational understanding, creativity, and resilience that programming teaches.&nbsp;&nbsp;</p>
+                <h2><strong>1.3 Richer pedagogy</strong></h2>
+                <p>As Conrad Wolfram points out in his book <a rel="noopener" href="https://www.computerbasedmath.org/the-maths-fix/" target="_blank">The Maths Fix</a> (see also <a rel="noopener" href="https://www.computerbasedmath.org/" target="_blank">Computer Based Maths</a>), even if we believe that all children should become numerate, it is bonkers to teach maths as if computers did not exist.&nbsp; Rather than teaching children to execute long-division algorithms, we should take advantage of computational methods to teach maths in a way that is more ambitious, rich, engaging, and exploratory.</p>
+                <p>It's the same with coding. I am not arguing that we should <em>ignore </em>LLMs in teaching programming.&nbsp; Quite the reverse: we should exploit their strengths to allow us and our students to focus on the things that matter. &nbsp; For example, we know that many children find programming difficult, and struggle with where to place their semicolons. &nbsp; If a coding co-pilot can automate some of these low level tasks, it may free more of their cognitive cycles to spend on higher level goals, such as (for example) critiquing, explaining, and finding errors in draft code produced by an LLM.</p>
+                <p>But this is all speculation.&nbsp;&nbsp; We are only six months into the LLM era, so no one has much idea yet of how to build better pedagogy on that technology.&nbsp; That will come. You might, for example, enjoy <a href="https://arxiv.org/abs/2307.16364"><em>Promptly: using prompt problems to teach learners how to effectively utilize AI code generators</em></a> (Denny et al, 2023), or <a href="https://arxiv.org/abs/2309.14049"><em>How Novices Use LLM-Based Code Generators to Solve CS1 Coding Tasks in a Self-Paced Learning Environment</em></a> (Kazemitabaar et al, 2023). Meanwhile, let's avoid the knee-jerk reaction of "kids don't need to learn to code any more".</p>
+                <h1><strong>2. Human programmers are more important than ever</strong></h1>
+                <p>LLMs can certainly write code.&nbsp; But can they reliably write <em>correct </em>code?&nbsp; Not really: they are <em>imitative</em>, predicting the next symbol in the program based on the preceding symbols, the original prompt, and an enormous corpus of existing code, much of which contains bugs.&nbsp; Code written by an LLM is (for now anyway) fundamentally untrustworthy.</p>
+                <h2><strong>2.1. Copilots need pilots</strong></h2>
+                <p>If I ask ChatGPT to "write a sort algorithm in Python", it will do so well, because there are thousands and thousands of well-labelled sorting algorithms in the training data the ChatGPT has learned from.</p>
+                <p>A sorting algorithm is a rare example of a task with a simple, easy-to-understand specification that can be stated in a few words.&nbsp; But suppose I ask ChatGPT to "write a system that gathers data from my health-monitor bracelet, and tells me if things are going wrong".&nbsp; Unlike a sorting algorithm, it is far from clear what I mean.&nbsp;&nbsp; How should the data be gathered?&nbsp; How should it be stored?&nbsp; What does "going wrong" mean?&nbsp; What should the user interface be like?&nbsp; How can it be resilient to data loss if the computer crashes? What about privacy concerns?&nbsp; Should the components communicate using cryptographic methods?&nbsp; How should the user be authenticated?</p>
+                <p>Real systems are <em>complicated</em>, and consist of many thousands of lines of code. Large language models just spit out text that fits the probability density of similar text it has seen before.&nbsp; It seems wildly unlikely that a LLM will generate an entire 100,000-line program any time soon, at least not the program you wanted.</p>
+                <p>What LLMs <strong>can </strong>do is act as a <strong>sophisticated auto-complete mechanism</strong>, that works alongside a programmer making them more productive, and perhaps, over time, a <em>lot </em>more productive.&nbsp; Rather than just auto-completing single words, it may fill in multiple lines of code.&nbsp; For example, rather than looking up the user manual for a data visualisation library, you may be able to say "Draw a graph showing the cumulative number of accidents over time, based on the data in array A".&nbsp;&nbsp;</p>
+                <p>However, calling it "super-auto-complete" substantially under-plays the role that LLMs can play.&nbsp; Auto-complete offers one suggestion; but LLMs offer a <em>conversation</em>.&nbsp; If the code it offers doesn't do the job, you can discuss changes with the LLM; at its best it can really feel like programming with a partner.&nbsp; To make this concrete, <a rel="noopener" href="https://simon.peytonjones.org/assets/pages/LLM-copilot-in-action.htm" target="_blank">here is an example of a conversation that my colleague Rob Percival had with an LLM</a>.&nbsp; Do take a look: it is hard not to be impressed with the quality of this interaction. Here's another <a rel="noopener" href="https://www.newyorker.com/magazine/2023/11/20/a-coder-considers-the-waning-days-of-the-craft" target="_blank">reflective article from a professional software developer</a>.</p>
+                <p>That is why these systems are often branded as "co-pilots", emphasising the partnership with a person, improving their productivity, but emphatically not replacing them.&nbsp; Co-pilots need pilots!&nbsp;&nbsp; The human pilot knows the goal, understands the code, and (with the help of an LLM partner that is really good at banging out boilerplate) iteratively guides the partnership towards the ill-specified but crucial goal of the software.&nbsp; "<a rel="noopener" href="https://dl.acm.org/doi/pdf/10.1145/3589996" target="_blank">Taking flight with Copilot</a>" is an accessible article discussing the effect of LLMs on programmer productivity.</p>
+                <p>Will this increased productivity mean that we need fewer programmers?&nbsp; No more so than when high-level languages displaced assembly code for most applications.&nbsp; Rather we will adjust upwards the scale and ambition of the software we write. &nbsp;</p>
+                <p>Programmers' jobs are safe for the foreseeable future.&nbsp; Indeed they will be in more demand than ever.&nbsp; You might enjoy "<a rel="noopener" href="https://spectrum.ieee.org/ai-programming" target="_blank">How coders can survive and thrive in a ChatGPT world</a>" (IEEE Spectrum 2023).</p>
+                <h2><strong>2.2. Large language models write code that may or may not be correct</strong></h2>
+                <p>LLMs that generate English text are deeply prone to "hallucination".&nbsp; Asked to write a CV for you, they will confidently explain that you won the Nobel prize.&nbsp; Twice.&nbsp; They aren't "lying".&nbsp; They are simply producing text that fits the probability space of text they have seen before.</p>
+                <p>It's the same with programming. LLMs will produce extremely <em>plausible </em>code (in fairly tightly defined situations, as discussed in Section 1), but there is little reason to suppose that it is <em>correct </em>code.&nbsp; Every single thing that an LLM generates must be checked by a human, to ensure that it is fit for purpose, especially if it is going to form part of an inscrutable program on which other people will rely. &nbsp; A significant risk of AI-driving coding assistants is that outright-wrong code will find its way into running systems.&nbsp; (See for example "<a rel="noopener" href="https://arxiv.org/abs/2108.09293" target="_blank">Asleep at the keyboard?&nbsp; Assessing the security of GitHub Copilot's code contributions</a>" (Pearce et al 2022), or "<a rel="noopener" href="https://arxiv.org/abs/2211.03622" target="_blank">Do users write more insecure code with AI assistants</a>?" (Perry et al 2022).)</p>
+                <p>In education, one might wonder whether presenting students with lots of highly-plausible but sometimes-subtly-incorrect code is the best way to help them on their learning journey.</p>
+                <p>Of course, human beings write code with plenty of bugs too, but we are <em>very </em>far from the point where we might say that a big system written by ChatGPT will be less buggy than one written by a human, partly because it just makes stuff up, and partly because it has learned from a corpus of buggy, exploitable code.</p>
+                <p>But you can only <strong>check </strong>code if you <strong>understand </strong>how code works; in short, you must be a programmer.</p>
+            </div>
+            
+        </div>
+      </div>
+      
+      <nav class="navbar fixed bottom navbar-dark" style="background-color: #1701014b;" id="footer">
+          <a class="navbar-brand" style="color: white">Tempo's Great Website</a>
+          <ul class="navbar-nav">
+            <li class="nav-item active h4">
+              <a class="navbar-brand" href="https://discordapp.com/users/tempo21781">Follow me <img src="images/pngegg.png" width="30" height="30"></a>
+            </li>
+          </ul>
+      </nav>
+    </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <script src="index_script.js"></script>
+        <title>Using Carousel</title>
+    </head>
+    <body class="background-container sticky-top" id="backgroundContainer">
+      <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+        <a class="navbar-brand">
+            <img id="logo" alt="Image Credit: logo made using Chat-GPT" src="images/Logo.png">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+          aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+          <ul class="navbar-nav">
+            <li class="nav-item h4">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item h4 active">
+              <a class="nav-link" href="slideShow.html">Slide Show</a>
+            </li>
+            <li class="nav-item h4">
+              <a class="nav-link" href="javaScript.html">Java Script</a>
+            </li>
+            <li class="nav-item h4">
+              <a class="nav-link" href="Navigation.html">The Navigation Panel</a>
+            </li>
+            <li class="nav-item h4">
+              <a class="nav-link" href="blogs.html">Blogs and Articles</a>
+            </li>
+            <li class="nav-item h4">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" 
+                aria-haspopup="true" aria-expanded="false"></a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="blog1.html">Why we must (still) teach our children to code</a>
+                <a class="dropdown-item" href="blog2.html">I Fight For The Users</a>
+                <a class="dropdown-item" href="article.html">I learned the language of computer programming in my 50s – here’s what I discovered</a>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+        </nav>
+      
+      <div id="carouselOne" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg" alt="Photo Credit: Kevin Ku - https://unsplash.com/@ikukevk">
+          </div>
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="images/shutterstock_535124956-scaled.jpg" alt="Photo Credit: https://www.computersciencedegreehub.com/faq/what-is-coding/">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg" alt="Photo Credit: Fotis Fotopoulos - https://unsplash.com/@ffstop">
+          </div>
+        </div>
+      </div>
+
+      <div id="jumbotronContainer">
+        <div class="jumbotron">
+          <h1 class="display-4">The Basic Carousel</h1>
+          <p class="lead">Placing the basic carousel was straight forward, as was filling it with images. I ran into 
+            problems when trying to automate the image transitions. My initial JavaScript code did nothing to the 
+            appearance on the screen. </p>
+          <hr class="my-4">
+          <p>Doing some research identified the cause of the issue as configuration issues with the bootstrap I was 
+            implementing. The guides I’ve been reading have all been written for Bootstrap 4, and the bootstrap I’d 
+            linked into my code (given to us by the distributed code) was bootstrap 5. The quick fix was simply to 
+            instead import bootstrap 4.0.0 instead of the 5.something I’d started with. Later in the project I may try 
+            and fix this for version 5, though I’m not sure.</p>
+          <p>Just as I finished writing this, I realised that the styling I’d added causes an issue for mobile devices. 
+            I’d set the container height to be fixed, which caused the images to squish. I needed to amend to a 
+            min-height and a max-height with overflow hidden to get what I needed.</p>
+        </div>
+      </div>
+      
+      <nav class="navbar fixed bottom navbar-dark" style="background-color: #1701014b;" id="footer">
+          <a class="navbar-brand" style="color: white">Tempo's Great Website</a>
+          <ul class="navbar-nav">
+            <li class="nav-item active h4">
+              <a class="navbar-brand" href="https://discordapp.com/users/tempo21781">Follow me <img src="images/pngegg.png" width="30" height="30"></a>
+            </li>
+          </ul>
+      </nav>
+    </body>
+</html>
