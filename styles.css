@@ -23,14 +23,13 @@
     content:'';
     position: fixed;
     top: 0;
-    position: fixed;
     height: 100vh;
     left: 0;
     right: 0;
-    z-index: -1;
+    z-index: -10;
     background: url('images/background.jpg') center center;
     -webkit-background-size: auto 2000px;
-    -o-bacground-size: auto 2000px;
+    -o-background-size: auto 2000px;
     -moz-background-size: auto 2000px;
     background-size: auto 2000px;
 }
