@@ -9,7 +9,7 @@
     }
 }
 
-.background-container {
+/* .background-container {
     height: auto;
     background-image: url('images/background.jpg');
     background-repeat: no-repeat;
@@ -17,7 +17,7 @@
     background-position: center center;
     background-attachment: fixed;
     transition: background-position 0.3s;
-}
+} */
 
 .background-container::after {
     content:'';
